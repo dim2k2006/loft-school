@@ -142,11 +142,15 @@ h6 {
 	height: 42px;
 	margin-top: 40px;
 	margin-bottom: 39px;
-	text-indent: -999px;
 	overflow: hidden;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	background-image: url(../images/logo@1x.png);
+}
+
+.logo span {
+	text-indent: -999px;
+}
+
+.logo img {
+	width: 100%;
 }
 
 
