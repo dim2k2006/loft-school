@@ -64,7 +64,7 @@ gulp.task('build', ['move'], function () {
     return gulp.src('app/*.html')
         .pipe(assets)
         .pipe(gulpif('*.js', uglify()))
-        .pipe(gulpif('*.css', minifyCss()))
+        .pipe(gulpif('*.css', minifyCss({rebase: false})))
         .pipe(assets.restore())
         .pipe(useref())
         .pipe(gulp.dest('dist'));
