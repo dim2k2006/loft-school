@@ -1,0 +1,355 @@
+/*MEDIA*/
+@media screen and (max-width: 1024px) {
+	.header__left {
+		width: 45%;
+	}
+
+	.header__right {
+		width: 55%;
+	}
+
+	.social__item {
+		width: 40px;
+		height: 40px;
+	}
+
+	.social__item + .social__item {
+  		margin-left: 20px;
+	}
+
+	.social__link {
+		-webkit-background-size: 165px 83px;
+           -moz-background-size: 165px 83px;
+        	 -o-background-size: 165px 83px;
+        		background-size: 165px 83px;
+	}
+
+	.social-vk {
+		background-position: -1px -1px;
+	}
+
+	.social-vk:hover {
+		background-position: -1px -42px;
+	}
+
+	.social-twitter {
+		background-position: -42px -1px;
+	}
+
+	.social-twitter:hover {
+		background-position: -42px -42px;
+	}
+
+	.social-facebook {
+		background-position: -83px -1px;
+	}
+
+	.social-facebook:hover {
+		background-position: -83px -42px;
+	}
+
+	.social-github {
+		background-position: -124px -1px;
+	}
+
+	.social-github:hover {
+		background-position: -124px -42px;
+	}
+
+	.burger {
+		display: inline-block;
+	}
+
+	.aside {
+		display: none;
+	}
+
+	.content {
+ 		padding-left: 0;
+	}
+
+	.contacts_mob {
+		display: block;
+	}
+
+	.footer__lock {
+		display: none;
+	}
+
+	.footer__copy {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		line-height: 16px;
+	}
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.box__content {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	
+}
+
+
+
+@media screen and (max-width: 640px) {
+	.header:after {
+		height: 2px;
+	}
+
+	.logo {
+		width: 166px;
+		height: 29px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		-webkit-background-size: 166px 29px;
+           -moz-background-size: 166px 29px;
+        	 -o-background-size: 166px 29px;
+        		background-size: 166px 29px;
+	}
+
+	.header__left {
+		width: 70%;
+	}
+
+	.header__right {
+		width: 30%;
+	}
+
+	.social {
+		display: none;
+	}
+
+	.social_mob {
+		display: block;
+	}
+
+	.burger {
+		margin-top: 20px;
+		margin-left: 0;
+	}
+
+	.contacts_mob .contacts__item {
+		display: block;
+		width: 100%;
+	}
+
+	.main {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	.box__title {
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.box__title span {
+		padding-top: 10px;
+		padding-left: 0;
+		padding-right: 0;
+		border: none;
+	}
+
+	.personal {
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.personal__photo {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		top: auto;
+		left: auto;
+	}
+
+	.personal__content {
+		min-height: 0;
+		text-align: center;
+	}
+
+	.presonal__item {
+		display: block;
+	}
+
+	.personal__title {
+		display: block;
+		padding-right: 0;
+	}
+
+	.personal__info {
+		display: block;
+	}
+
+	.tag {
+		margin-top: 5px;
+		margin-left: 0;
+	}
+
+	.personal__photo {
+		margin-top: 0;
+	}
+
+	.personal__title {
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	.personal__info {
+		font-size: 19px;
+		line-height: 24px;
+	}
+
+	.work {
+		padding-top: 5px;
+	}
+
+	.work__item {
+		min-height: 0;
+		padding-top: 52px;
+		padding-left: 0;
+		text-align: center;
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+	}
+
+	.work__item + .work__item {
+  		margin-top: 54px;
+	}
+
+	.education {
+		padding-top: 5px;
+	}
+
+	.education__item {
+		min-height: 0;
+		padding-top: 52px;
+		padding-left: 0;
+		text-align: center;
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+	}
+
+	.education__item + .education__item {
+  		margin-top: 54px;
+	}
+
+	.page-wrapper:after {
+		content: "";
+		height: 42px;
+		display: block;
+	}
+
+	.footer {
+		height: 42px;
+		margin-top: -42px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.footer:after {
+		height: 2px;
+	}
+}
+
+
+
+/*RETINA*/
+@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min--moz-device-pixel-ratio:2),only screen and (-o-min-device-pixel-ratio:2/1),only screen and (min-device-pixel-ratio:2) {
+	.logo {
+		background-image: url(../images/logo@2x.png);
+		-webkit-background-size: 243px 42px;
+           -moz-background-size: 243px 42px;
+        	 -o-background-size: 243px 42px;
+        		background-size: 243px 42px;
+	}
+
+
+
+	.social__link {
+		background-image: url(../images/social@2x.png);
+		-webkit-background-size: 193px 97px;
+           -moz-background-size: 193px 97px;
+        	 -o-background-size: 193px 97px;
+        		background-size: 193px 97px;
+	}
+
+
+
+	.contacts__link:before {
+		background-image: url(../images/contacts@2x.png);
+		-webkit-background-size: 64px 22px;
+           -moz-background-size: 64px 22px;
+        	 -o-background-size: 64px 22px;
+        		background-size: 64px 22px;
+	}
+
+
+
+	.work__item {
+		background-image: url(../images/work@2x.png);
+		-webkit-background-size: 36px 34px;
+           -moz-background-size: 36px 34px;
+        	 -o-background-size: 36px 34px;
+        		background-size: 36px 34px;
+	}
+
+
+
+	.education__item {
+		background-image: url(../images/education@2x.png);
+		-webkit-background-size: 41px 23px;
+           -moz-background-size: 41px 23px;
+        	 -o-background-size: 41px 23px;
+        		background-size: 41px 23px;
+	}
+
+
+
+	.education_courses {
+		background-image: url(../images/courses@2x.png);
+		-webkit-background-size: 26px 32px;
+           -moz-background-size: 26px 32px;
+        	 -o-background-size: 26px 32px;
+        		background-size: 26px 32px;
+	}
+
+
+
+	.footer__lock {
+		background-image: url(../images/lock@2x.png);
+		-webkit-background-size: 41px 32px;
+           -moz-background-size: 41px 32px;
+        	 -o-background-size: 41px 32px;
+        		background-size: 41px 32px;
+	}
+}
+
+
+
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio:2),only screen and (min--moz-device-pixel-ratio:2),only screen and (-o-min-device-pixel-ratio:2/1),only screen and (min-device-pixel-ratio:2) {
+	.social__link {
+		-webkit-background-size: 165px 83px;
+           -moz-background-size: 165px 83px;
+        	 -o-background-size: 165px 83px;
+        		background-size: 165px 83px;
+	}
+}
+
+
+
+@media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio:2),only screen and (min--moz-device-pixel-ratio:2),only screen and (-o-min-device-pixel-ratio:2/1),only screen and (min-device-pixel-ratio:2) {
+	.logo {
+		background-image: url(../images/logo@2x.png);
+		-webkit-background-size: 166px 29px;
+           -moz-background-size: 166px 29px;
+        	 -o-background-size: 166px 29px;
+        		background-size: 166px 29px;
+	}
+}

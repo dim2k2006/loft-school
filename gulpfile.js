@@ -7,7 +7,8 @@ var gulp = require('gulp'),
 	clean = require('gulp-clean'),
 	connect = require('gulp-connect'),
 	opn = require('opn'),
-	notify = require("gulp-notify");
+	notify = require("gulp-notify"),
+	importCss = require('gulp-import-css');
 
 
 
@@ -44,6 +45,15 @@ gulp.task('js', function () {
 	gulp.src('./app/js/*.js')
 	.pipe(connect.reload());
 });
+
+
+
+// CSS import
+// gulp.task('import', function () {
+//   gulp.src('assets/*.css')
+//     .pipe(importCss())
+//     .pipe(gulp.dest('dist/'));
+// });
 
 
 

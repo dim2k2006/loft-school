@@ -1,0 +1,147 @@
+/*PERSONAL*/
+.personal {
+	position: relative;
+	padding-left: 180px;
+	padding-bottom: 40px;
+}
+
+.personal__photo {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: 0;
+	left: 0;
+	margin-top: 34px;
+	margin-left: 6px;
+	overflow: hidden;
+	border: 5px solid #2ba4bc;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+			border-radius: 50%;
+}
+
+.personal__photo img {
+	width: 100%;
+}
+
+.personal__content {
+	min-height: 185px;
+	padding-top: 23px;
+}
+
+.personal__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.presonal__item {
+	display: table;
+}
+
+.presonal__item + .presonal__item {
+	margin-top: 16px;
+}
+
+.personal__title {
+	display: table-cell;
+	padding-right: 16px;
+	font-family: 'fira_sansmedium';
+	font-size: 17px;
+	line-height: 17px;
+	color: #4a545d;
+	white-space: nowrap;
+}
+
+.personal__info {
+	display: table-cell;
+	font-family: 'fira_sansbook';
+	font-size: 15px;
+	line-height: 15px;
+	color: #4a545d;
+}
+
+
+
+/*WORK*/
+.work {
+	padding-top: 26px;
+	padding-bottom: 40px;
+}
+
+.work__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.work__item {
+	min-height: 38px;
+	padding-left: 76px;
+	background-repeat: no-repeat;
+	background-position: 9px 50%;
+	background-image: url(../images/work@1x.png);
+}
+
+.work__item + .work__item {
+	margin-top: 24px;
+}
+
+.work__name {
+	font-family: 'fira_sansbook';
+	font-size: 17px;
+	line-height: 17px;
+	color: #4a545d;
+}
+
+.work__date {
+	font-family: 'fira_sanslight';
+	font-size: 15px;
+	line-height: 15px;
+	color: #4a545d;
+}
+
+
+
+/*EDUCATION*/
+.education {
+	padding-top: 26px;
+	padding-bottom: 40px;
+}
+
+.education__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.education__item {
+	min-height: 38px;
+	padding-left: 76px;
+	background-repeat: no-repeat;
+	background-position: 9px 50%;
+	background-image: url(../images/education@1x.png);
+}
+
+.education_courses {
+	background-position: 16px 50%;
+	background-image: url(../images/courses@1x.png);
+}
+
+.education__item + .education__item {
+	margin-top: 24px;
+}
+
+.education__name {
+	font-family: 'fira_sansbook';
+	font-size: 17px;
+	line-height: 17px;
+	color: #4a545d;
+}
+
+.education__date {
+	font-family: 'fira_sanslight';
+	font-size: 15px;
+	line-height: 15px;
+	color: #4a545d;
+}
