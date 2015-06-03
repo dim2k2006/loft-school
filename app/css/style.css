@@ -74,6 +74,18 @@ h6 {
 
 
 
+/*TRANSITIONS*/
+.portfolio__overlay,
+.portfolio__title,
+.portfolio_add .portfolio__title:before {
+	-webkit-transition: all .2s ease;
+		 -o-transition: all .2s ease;
+			transition: all .2s ease;
+}
+
+
+
+
 /*PAGE WRAPPER*/
 .page-wrapper{
 	position:relative;
@@ -343,12 +355,16 @@ h6 {
 	color: #3ba8c0;
 }
 
-.navigation-state-active {
+.navigation-state-active .navigation__link {
 	color: #FFF;
 	background-color: #3ba8c0;
 }
 
-.navigation-state-active:hover {
+.navigation__item + .navigation__item.navigation-state-active:after {
+	display: none;
+}
+
+.navigation-state-active:hover .navigation__link {
 	color: #FFF;
 }
 
@@ -534,6 +550,11 @@ h6 {
 .box__content {
 	padding-left: 48px;
 	padding-right: 48px;
+}
+
+.box_big {
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 

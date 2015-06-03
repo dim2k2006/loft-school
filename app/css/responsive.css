@@ -82,6 +82,15 @@
 		padding-right: 0;
 		line-height: 16px;
 	}
+
+	.portfolio__item {
+		width: 30%;
+		height: auto;
+	}
+
+	.portfolio__item + .portfolio__item {
+		margin-left: 5%;
+	}
 }
 
 
@@ -252,6 +261,18 @@
 	.footer:after {
 		height: 2px;
 	}
+
+	.portfolio__item {
+		width: 100%;
+	}
+
+	.portfolio__item + .portfolio__item {
+		margin-left: 0;
+	}
+
+	.portfolio__row + .portfolio__row {
+  		margin-top: 0;
+	}
 }
 
 
@@ -324,6 +345,14 @@
            -moz-background-size: 41px 32px;
         	 -o-background-size: 41px 32px;
         		background-size: 41px 32px;
+	}
+
+	.portfolio_add .portfolio__title:before {
+		background-image: url(../images/portfolio-add@2x.png);
+		-webkit-background-size: 32px 32px;
+           -moz-background-size: 32px 32px;
+        	 -o-background-size: 32px 32px;
+        		background-size: 32px 32px;
 	}
 }
 
