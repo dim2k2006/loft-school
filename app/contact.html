@@ -24,6 +24,7 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<link rel="icon" type="image/png" href="images/favicon.png" />
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
 	<body>
 		<div class="page-wrapper">
@@ -101,14 +102,18 @@
 									<label for="msg" class="contact-form__label">Сообщение</label>
 									<textarea name="msg" id="msg" class="contact-form__textarea form__input">Кратко в чем суть</textarea>
 								</div>
-								<div class="contact-form__row">
+								<!-- <div class="contact-form__row">
 									<label for="captcha" class="contact-form__label">Введите код, указанный на картинке</label>
 									<div class="contact-form__col">
-
+										<div class="g-recaptcha" data-sitekey="6Leg-wcTAAAAAC4mCLx7NjAVOZA9rsXWelCPMzwD"></div>
 									</div><div 
 									class="contact-form__col">
 										<input type="text" name="captcha" id="captcha" class="contact-form__input form__input" value="Введите код">
 									</div>
+								</div> -->
+								<div class="contact-form__row">
+									<label for="captcha" class="contact-form__label">Введите код, указанный на картинке</label>
+									<div class="g-recaptcha" data-sitekey="6Leg-wcTAAAAAC4mCLx7NjAVOZA9rsXWelCPMzwD"></div>
 								</div>
 								<div class="contact-form__row">
 									<div class="contact-form__col contact-form_submit">
