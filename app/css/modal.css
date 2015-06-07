@@ -1,0 +1,332 @@
+/*MODAL*/
+.modal-open {
+	overflow: hidden;
+}
+
+.modal {
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+}
+
+.modal.fade .modal-dialog {
+	-webkit-transform: translate(0, -25%);
+		-ms-transform: translate(0, -25%);
+		 -o-transform: translate(0, -25%);
+			transform: translate(0, -25%);
+	-webkit-transition: -webkit-transform 0.3s ease-out;
+		 -o-transition: -o-transform 0.3s ease-out;
+			transition: transform 0.3s ease-out;
+}
+
+.modal.in .modal-dialog {
+	-webkit-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+		 -o-transform: translate(0, 0);
+			transform: translate(0, 0);
+}
+
+.modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.modal-dialog {
+	position: relative;
+	width: auto;
+	margin: 10px;
+}
+
+.modal-content {
+	position: relative;
+	background-color: #ffffff;
+	border: 1px solid #999999;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+			box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	-webkit-background-clip: padding-box;
+	        background-clip: padding-box;
+	outline: 0;
+}
+
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000000;
+}
+
+.modal-backdrop.fade {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.modal-backdrop.in {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.modal-header {
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+	min-height: 16.42857143px;
+}
+
+.modal-header .close {
+	margin-top: -2px;
+}
+
+.modal-title {
+	margin: 0;
+	line-height: 1.42857143;
+}
+
+.modal-body {
+	position: relative;
+	padding: 0;
+	overflow: hidden;
+	background-color: #eff3f7;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+			border-radius: 4px;
+}
+
+.modal-footer {
+	padding: 15px;
+	text-align: right;
+	border-top: 1px solid #e5e5e5;
+}
+
+.modal-footer .btn + .btn {
+	margin-left: 5px;
+	margin-bottom: 0;
+}
+
+.modal-footer .btn-group .btn + .btn {
+	margin-left: -1px;
+}
+
+.modal-footer .btn-block + .btn-block {
+	margin-left: 0;
+}
+
+.modal-scrollbar-measure {
+	position: absolute;
+	top: -9999px;
+	width: 50px;
+	height: 50px;
+	overflow: scroll;
+}
+
+@media (min-width: 768px) {
+	.modal-dialog {
+		width: 362px;
+		margin: 30px auto;
+	}
+
+	.modal-content {
+		-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	}
+
+	.modal-sm {
+		width: 300px;
+	}
+}
+
+@media (min-width: 992px) {
+	.modal-lg {
+		width: 900px;
+	}
+}
+
+.modal__title {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 12px;
+	padding-bottom: 8px;
+	padding-left: 12px;
+	font-family: 'fira_sansbook';
+	font-size: 25px;
+	line-height: 25px;
+	color: #FFF;
+	text-align: left;
+	background-color: #48cbe8;
+	border-bottom: 9px solid #67dffa;
+}
+
+.modal__wrapper {
+	padding-top: 10px;
+	padding-bottom: 22px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.modal-form__row + .modal-form__row {
+	margin-top: 12px;
+}
+
+.modal-form__label {
+	display: block;
+	padding-bottom: 5px;
+	font-family: 'fira_sansbook';
+	font-size: 17px;
+	line-height: 17px;
+	color: #959aa8;
+	text-align: left;
+}
+
+.modal-form__input {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 41px;
+	padding-left: 10px;
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+	line-height: 41px;
+	color: #48cbe8;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	resize: none;
+	outline: none;
+	border: 1px solid #48cbe8;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+			border-radius: 4px;
+}
+
+.modal-form__textarea {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 111px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+	line-height: 16px;
+	color: #48cbe8;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	resize: none;
+	outline: none;
+	border: 1px solid #48cbe8;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+			border-radius: 4px;
+}
+
+.modal-form__submit {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 4px;
+	padding-top: 8px;
+	padding-bottom: 4px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: 'fira_sansbook';
+	font-size: 19px;
+	line-height: 19px;
+	color: #FFF;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	resize: none;
+	outline: none;
+	border-bottom: 2px solid #3ba8c0;
+	background-color: #48cbe8;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+			border-radius: 4px;
+}
+
+.modal-form_submit {
+	text-align: center;
+}
+
+.modal__close {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 10px;
+	right: 12px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-image: url(../images/modal-close@1x.png);
+}
+
+.modal__upload-box {
+	position: relative;
+	width: 100%;
+	height: 41px;
+	padding-left: 10px;
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+	line-height: 41px;
+	color: #48cbe8;
+	border: 1px solid #48cbe8;
+	background-color: #fff;
+	overflow: hidden;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+			border-radius: 4px;
+}
+
+.modal__upload-box:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 39px;
+	top: 0;
+	right: 0;
+	background-color: #48cbe8;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-image: url(../images/modal-upload@1x.png);
+}
+
+.modal__upload-input {
+	cursor: pointer;
+	cursor: hand;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 128px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+			appearance: none;
+	-webkit-border-radius: 0;
+}
+
+.modal__upload-text {
+	font-style: normal; 
+}

@@ -354,6 +354,22 @@
         	 -o-background-size: 32px 32px;
         		background-size: 32px 32px;
 	}
+
+	.modal__close {
+		background-image: url(../images/modal-close@2x.png);
+		-webkit-background-size: 25px 25px;
+           -moz-background-size: 25px 25px;
+        	 -o-background-size: 25px 25px;
+        		background-size: 25px 25px;
+	}
+
+	.modal__upload-box:before {
+		background-image: url(../images/modal-upload@2x.png);
+		-webkit-background-size: 32px 24px;
+           -moz-background-size: 32px 24px;
+        	 -o-background-size: 32px 24px;
+        		background-size: 32px 24px;
+	}
 }
 
 

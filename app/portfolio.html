@@ -144,7 +144,7 @@
 										<p class="portfolio__descr">Одна из крупнейших социальных сетей в мире. Была основана 4 февраля 2004 году</p>
 									</div><div 
 									class="portfolio__item portfolio_add">
-										<a class="portfolio__preview" href="#" title="#">
+										<a class="portfolio__preview" href="#add-project" data-toggle="modal" data-target="#add-project" title="Добавить проект">
 											<div class="portfolio__overlay">
 												<div class="portfolio__cell">
 													<div class="portfolio__title">Добавить проект</div>
@@ -194,14 +194,55 @@
     	</footer>
 
 
+		<!-- data-backdrop="static" -->
+		<div class="modal fade" id="add-project" role="dialog" aria-labelledby="add-projectLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal__title">
+                        	Добавление проекта
+                        	<button type="button" class="modal__close" data-dismiss="modal" title="Закрыть"></button>
+                        </div>
+                        <div class="modal__wrapper">
+							<form action="#" method="#" class="modal-form">
+								<div class="modal-form__row">
+									<label for="pname" class="modal-form__label">Название проекта</label>
+									<input type="text" name="pname" id="pname" class="modal-form__input form__input" value="Введите название">
+    							</div>
+								<div class="modal-form__row">
+									<label for="attach" class="modal-form__label">Картинка проекта</label>
+									<div class="modal__upload-box">
+                                        <span><i class="modal__upload-text">Загрузите изображение</i></span>
+                                        <input type="file" name="attach" id="attach" class="modal__upload-input">
+                                    </div>
+								</div>
+    							<div class="modal-form__row">
+									<label for="purl" class="modal-form__label">URL проекта</label>
+									<input type="text" name="purl" id="purl" class="modal-form__input form__input" value="Добавьте ссылку">
+    							</div>
+    							<div class="modal-form__row">
+									<label for="pmsg" class="modal-form__label">Описание</label>
+									<textarea name="pmsg" id="pmsg" class="modal-form__textarea form__input">Пара слов о Вашем проекте</textarea>
+    							</div>
+    							<div class="modal-form__row modal-form_submit">
+									<input type="submit" class="modal-form__submit" value="Добавить">
+								</div>
+							</form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-		
+
 		<!-- build:js scripts/vendor.js -->
     	<!-- bower:js -->
     	<script src="bower_components/jquery/jquery.js"></script>
     	<script src="bower_components/tooltipster/js/jquery.tooltipster.min.js"></script>
     	<!-- endbower -->
+    	<script src="js/modal.js"></script>
     	<!-- endbuild -->
 		<!-- build:js scripts/main.js -->
 		<script src="js/main.js"></script>
