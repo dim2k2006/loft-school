@@ -1,5 +1,7 @@
 $(document).ready(function(){
-	var inputs = $('.form__input');
+	var inputs = $('.form__input'),
+		upload = $('.modal__upload-input'),
+		uploadName = $('.modal__upload-text');
 
 	inputs.each(function() {
     	$(this)
@@ -16,5 +18,11 @@ $(document).ready(function(){
 		  	$(this).addClass('inactive').val($(this).data('default'));
 		}
 		});
+	});
+
+
+	upload.change(function(event) {
+		var fileName = $(this).val().split("\\");
+		uploadName.html(fileName[fileName.length-1]);
 	});
 })
