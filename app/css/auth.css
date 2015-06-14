@@ -1,3 +1,20 @@
+/*CENTERING AUTH FORM VERTICALLY*/
+.page-wrapper_auth {
+	display: table;
+	width: 100%;
+}
+
+.page-wrapper_auth .main {
+	display: table-cell;
+	vertical-align: middle;
+	padding-top: 0;
+	padding-bottom: 83px;
+}
+
+
+
+
+
 /*AUTH*/
 .auth {
 	max-width: 590px;
@@ -95,8 +112,17 @@
 	resize: none;
 	outline: none;
 	border-bottom: 4px solid #3ba8c0;
+	border-top: 4px solid #48cbe8;
 	background-color: #48cbe8;
 	-webkit-border-radius: 4px;
 	   -moz-border-radius: 4px;
 			border-radius: 4px;
+}
+
+.auth-form__submit:hover {
+	border-bottom-color: #48cbe8;
+}
+
+.auth-form__submit:active {
+	border-top-color: #3ba8c0;
 }
