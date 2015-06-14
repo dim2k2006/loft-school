@@ -254,10 +254,19 @@
 	resize: none;
 	outline: none;
 	border-bottom: 2px solid #3ba8c0;
+	border-top: 2px solid #48cbe8;
 	background-color: #48cbe8;
 	-webkit-border-radius: 4px;
 	   -moz-border-radius: 4px;
 			border-radius: 4px;
+}
+
+.modal-form__submit:hover {
+	border-bottom-color: #48cbe8;
+}
+
+.modal-form__submit:active {
+	border-top-color: #3ba8c0;
 }
 
 .modal-form_submit {
