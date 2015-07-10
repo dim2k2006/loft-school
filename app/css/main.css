@@ -6,4 +6,6 @@
 @import url('auth.css');
 @import url('responsive.css');
 @import url('modal.css');
+@import url('tooltips.css');
+@import url('form.css');
 @import url('ie8.css');

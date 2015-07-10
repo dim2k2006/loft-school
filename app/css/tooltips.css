@@ -1,0 +1,14 @@
+/*TOOLTIPS*/
+.tooltipster-default {
+	border-radius: 2px;
+	border: 2px solid #f97e76;
+	background: #f97e76;
+	color: #fff;
+}
+
+.tooltipster-default .tooltipster-content {
+	font-size: 13px;
+	line-height: 16px;
+	padding: 7px 10px;
+	overflow: hidden;
+}

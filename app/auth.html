@@ -32,14 +32,14 @@
 	    		<div class="auth">
 	    			<h3 class="auth__title">Авторизируйтесь</h3>
     				<div class="auth__wrapper">
-    					<form action="#" method="#" class="auth-form">
-    						<div class="auth-form__row">
+    					<form action="#" method="#" class="auth-form form">
+    						<div class="auth-form__row" id="example">
 								<label for="name" class="auth-form__label">Логин</label>
-								<input type="text" name="name" id="name" class="auth-form__input form__input" value="Введите логин">
+								<input type="text" name="name" id="auth-name" class="auth-form__input form__input tooltip" value="Введите логин" data-mask="Введите логин" data-position="left" title="Вы не ввели имя">
     						</div>
 							<div class="auth-form__row">
 								<label for="pass" class="auth-form__label">Пароль</label>
-    							<input type="text" name="pass" id="pass" class="auth-form__input form__input" value="Введите пароль">
+    							<input type="text" name="pass" id="auth-pass" class="auth-form__input form__input tooltip" value="Введите пароль" data-mask="Введите пароль" data-position="left" title="Вы не ввели пароль">
 							</div>
 							<div class="auth-form__row">
 								<input type="submit" class="auth-form__submit" value="Войти">
@@ -69,6 +69,7 @@
     	<!-- endbuild -->
 		<!-- build:js scripts/main.js -->
 		<script src="js/main.js"></script>
+		<script src="js/validation.js"></script>
 		<!-- endbuild -->
 	</body>
 </html>

@@ -25,4 +25,4 @@ $(document).ready(function(){
 		var fileName = $(this).val().split("\\");
 		uploadName.html(fileName[fileName.length-1]);
 	});
-})
+});
