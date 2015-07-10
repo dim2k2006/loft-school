@@ -1,0 +1,24 @@
+/*SOCIAL*/
+.ie8 .social-twitter {
+	background-position: -49px -1px;
+}
+
+.ie8 .social-twitter:hover {
+	background-position: -49px -49px;
+}
+
+.ie8 .social-facebook {
+	background-position: -97px -1px;
+}
+
+.ie8 .social-facebook:hover {
+	background-position: -97px -49px;
+}
+
+.ie8 .social-github {
+	background-position: -145px -1px;
+}
+
+.ie8 .social-github:hover {
+	background-position: -145px -49px;
+}
