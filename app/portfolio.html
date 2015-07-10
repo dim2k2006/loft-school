@@ -205,25 +205,25 @@
                         	<button type="button" class="modal__close" data-dismiss="modal" title="Закрыть"></button>
                         </div>
                         <div class="modal__wrapper">
-							<form action="#" method="#" class="modal-form">
+							<form action="#" method="#" class="modal-form form">
 								<div class="modal-form__row">
 									<label for="pname" class="modal-form__label">Название проекта</label>
-									<input type="text" name="pname" id="pname" class="modal-form__input form__input" value="Введите название">
+									<input type="text" name="pname" id="project-name" class="modal-form__input form__input tooltip" value="Введите название" data-mask="Введите название" data-position="left" title="Вы не ввели имя">
     							</div>
 								<div class="modal-form__row">
 									<label for="attach" class="modal-form__label">Картинка проекта</label>
-									<div class="modal__upload-box">
+									<div class="modal__upload-box tooltip" data-position="left" title="Вы не загрузили изображение">
                                         <span><i class="modal__upload-text">Загрузите изображение</i></span>
-                                        <input type="file" name="attach" id="attach" class="modal__upload-input">
+                                        <input type="file" name="attach" id="project-attach" class="modal__upload-input form__input" value="Загрузите изображение" data-mask="Загрузите изображение">
                                     </div>
 								</div>
     							<div class="modal-form__row">
 									<label for="purl" class="modal-form__label">URL проекта</label>
-									<input type="text" name="purl" id="purl" class="modal-form__input form__input" value="Добавьте ссылку">
+									<input type="text" name="purl" id="project-purl" class="modal-form__input form__input tooltip" value="Добавьте ссылку" data-mask="Добавьте ссылку" data-position="left" title="Вы не ввели URL">
     							</div>
     							<div class="modal-form__row">
 									<label for="pmsg" class="modal-form__label">Описание</label>
-									<textarea name="pmsg" id="pmsg" class="modal-form__textarea form__input">Пара слов о Вашем проекте</textarea>
+									<textarea name="pmsg" id="project-pmsg" class="modal-form__textarea form__input tooltip" data-mask="Пара слов о Вашем проекте" data-position="left" title="Вы не ввели сообщение">Пара слов о Вашем проекте</textarea>
     							</div>
     							<div class="modal-form__row modal-form_submit">
 									<input type="submit" class="modal-form__submit" value="Добавить">

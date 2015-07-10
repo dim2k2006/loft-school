@@ -88,30 +88,21 @@
 	    			<section class="contact">
 	    				<h3 class="contact__title">У вас интересный проект? Напишите мне</h3>
 	    				<div class="contact__wrapper">
-	    					<form action="#" method="#" class="contact-form">
+	    					<form action="#" method="#" class="contact-form form">
 	    						<div class="contact-form__row">
 	    							<div class="contact-form__col">
 	    								<label for="name" class="contact-form__label">Имя</label>
-	    								<input type="text" name="name" id="name" class="contact-form__input form__input" value="Как к Вам обращаться">
+	    								<input type="text" name="name" id="contact-name" class="contact-form__input form__input tooltip" value="Как к Вам обращаться" data-mask="Как к Вам обращаться" data-position="left" title="Вы не ввели имя">
 	    							</div><div 
 	    							class="contact-form__col">
 	    								<label for="email" class="contact-form__label">Email</label>
-	    								<input type="text" name="email" id="email" class="contact-form__input form__input" value="Куда мне писать">
+	    								<input type="text" name="email" id="contact-email" class="contact-form__input form__input tooltip" value="Куда мне писать" data-mask="Куда мне писать" data-position="right" title="Вы не ввели email">
 	    							</div>
 	    						</div>
 								<div class="contact-form__row">
 									<label for="msg" class="contact-form__label">Сообщение</label>
-									<textarea name="msg" id="msg" class="contact-form__textarea form__input">Кратко в чем суть</textarea>
+									<textarea name="msg" id="contact-msg" class="contact-form__textarea form__input tooltip" data-mask="Кратко в чем суть" data-position="left" title="Вы не ввели сообщение">Кратко в чем суть</textarea>
 								</div>
-								<!-- <div class="contact-form__row">
-									<label for="captcha" class="contact-form__label">Введите код, указанный на картинке</label>
-									<div class="contact-form__col">
-										<div class="g-recaptcha" data-sitekey="6Leg-wcTAAAAAC4mCLx7NjAVOZA9rsXWelCPMzwD"></div>
-									</div><div 
-									class="contact-form__col">
-										<input type="text" name="captcha" id="captcha" class="contact-form__input form__input" value="Введите код">
-									</div>
-								</div> -->
 								<div class="contact-form__row">
 									<label for="captcha" class="contact-form__label">Введите код, указанный на картинке</label>
 									<div class="g-recaptcha" data-sitekey="6Leg-wcTAAAAAC4mCLx7NjAVOZA9rsXWelCPMzwD"></div>
@@ -121,7 +112,7 @@
 										<input type="submit" class="contact-form__submit" value="Отправить">
 									</div><div 
 									class="contact-form__col contact-form_reset">
-										<input type="reset" class="contact-form__reset" value="Очистить">
+										<input type="reset" class="contact-form__reset form-reset" value="Очистить">
 									</div>
 								</div>
 	    					</form>
